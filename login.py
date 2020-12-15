@@ -10,5 +10,5 @@ print(driver.title)
 driver.find_element_by_xpath("//input[@formcontrolname='username']").send_keys("AF-FAR775PANDI.0")
 driver.find_element_by_xpath("//input[@formcontrolname='password']").send_keys("Rathods#07")
 driver.find_element_by_xpath("//button[@type='submit']").click()
-driver.find_element_by_xpath("//*[contains(text(),'Owner']").click()
+driver.find_element_by_xpath("//*[contains(text(),'Owner')]").click()
 #//*[contains(text(),'here')]
