@@ -20,7 +20,6 @@ driver.find_element_by_xpath("//*[contains(text(),'Branch Manager')]").click()  
 driver.find_element_by_xpath("//input[@formcontrolname='username']").send_keys("AF-FAR6750SMI.PAN")  # Branch Manager
 driver.find_element_by_xpath("//input[@formcontrolname='password']").send_keys("Rathods#07")
 driver.find_element_by_xpath("//button[@type='submit']").click()
-# elemnet = wait.until(EC.NoAlertPresentException)
 wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter Pin']")))
 driver.find_element_by_xpath("//input[@placeholder='Enter Pin']").send_keys("123456")
 wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='btn btn-round btn-block btn-success']")))
@@ -36,4 +35,6 @@ print("Login Successful to business user")
 # driver.find_element_by_id("dropdownBasic1").click()
 # driver.find_element_by_xpath("//*[contains(text(),'Logout')]").click()
 #print("LogOut Successful")
-
+wait.until(EC.visibility_of_element_located((By.XPATH, "//*[contains(text(),'User Profile']")))
+driver.find_element_by_xpath("//*[contains(text(),'User Profile']").click()
+#"https://stackoverflow.com/questions/31643418/raise-timeoutexceptionmessage-screen-stacktrace-timeoutexception-message"
